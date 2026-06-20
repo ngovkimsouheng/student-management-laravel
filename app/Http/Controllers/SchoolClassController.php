@@ -67,14 +67,5 @@ class SchoolClassController extends Controller
             ->with('success', 'School class deleted successfully.');
     }
 
-    public function addSubject(Request $request, SchoolClass $class)
-    {
-        $request->validate([
-            'subject_id' => 'required|exists:subjects,id',
-        ]);
-
-        $class->subjects()->syncWithoutDetaching($request->subject_id);
-
-        return back()->with('success', 'Subject assigned to class successfully');
-    }
+   
 }

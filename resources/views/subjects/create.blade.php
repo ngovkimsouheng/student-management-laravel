@@ -1,4 +1,4 @@
-{{-- @extends('layout')
+@extends('layout')
 
 @section('title', 'Create Subject')
 
@@ -36,4 +36,4 @@
 
     </form>
 </div>
-@endsection --}}
+@endsection

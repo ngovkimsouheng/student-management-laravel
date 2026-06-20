@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="border-t border-slate-700 pt-6 text-center text-sm">
-                <p>Crafted with <i class="fas fa-heart text-red-500"></i> for education</p>
+                <p>Crafted with for education</p>
             </div>
         </div>
     </footer>

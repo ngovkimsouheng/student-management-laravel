@@ -17,11 +17,17 @@ class SubjectController extends Controller
 
     public function create()
     {
-        Subject::create([
-            'subject_name' => $request->subject_name,
-            'class_id' => $class->id,
-        ]);
+        $classes = SchoolClass::all();
+
+        return view('subjects.create', compact('classes'));
     }
+    // public function create()
+    // {
+    //     Subject::create([
+    //         'subject_name' => $request->subject_name,
+    //         'class_id' => $class->id,
+    //     ]);
+    // }
 
     // public function store(Request $request)
     // {
